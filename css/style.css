@@ -1,0 +1,194 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle, #fff, #9aa8b8 ,#355070 );
+    background: -webkit-radial-gradient(circle, #fff, #9aa8b8 ,#355070 );
+    background: -moz-radial-gradient(circle, #fff, #9aa8b8 ,#355070 );
+    background: -o-radial-gradient(circle, #fff, #9aa8b8 ,#355070 );
+}
+
+#container{
+    background-color: #515575;
+    height: auto;
+    width: 550px;
+    margin: 120px auto;
+    padding: 25px;
+    box-shadow: 4px 4px 5px 0px #515570;
+    -moz-box-shadow: 4px 4px 5px 0px #515570;
+    -webkit-box-shadow: 4px 4px 5px 0px #515570;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+#score{
+    background-color: #B56576;
+    padding: 15px;
+    border-radius: 0.5em;
+    position: absolute;
+    left: 480px;
+    box-shadow: 0px 4px 2px #b5658f; 
+    -webkit-box-shadow: 0px 4px 2px #b5658f; 
+    -moz-box-shadow: 0px 4px 2px #b5658f;     
+    font-weight: bold;
+}
+
+#correctMsg{
+    background-color: #EAAC8B;
+    position: absolute;
+    left: 45%;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 0.5em;
+    display: none;
+}
+
+#errorMsg{
+    background-color: #8d021f;
+    position: absolute;
+    left: 46%;
+    font-weight: bolder;
+    color:#fff;
+    padding: 10px;
+    border-radius: 0.5em;
+    display: none;
+}
+
+#questionBox{
+    width: 400px;
+    height: 150px;
+    background-color: #B56576;
+    border-radius:  0.5em 0.5em 0px 0px;
+    /* position: absolute; */
+    margin: 80px auto 10px auto;
+    padding:15px;
+    color: black;
+    font-size: 90px;
+    font-family: cursive, sans-serif;
+    box-shadow: 0px 3px #b96862a9;
+}
+#instruction{
+    width: 420px;
+    height: 20px;
+    background-color: #b96862;
+    border-radius:  0px 0px 10px 10px;
+    margin: 5px auto 10px auto;
+    padding:5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#options{
+    background-color: gray;
+    height: 102px;
+    width: 420px;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.box{
+    background-color: #f0fff0;
+    width:90px;
+    height: 90px;
+    margin: 7px;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    line-height: 90px;
+    box-shadow: 2px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 2px 2px rgba(0,0,0,0.3);
+    position: relative;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+}
+
+.box:hover{
+    background-color: #9e129e;
+    font-weight: bold;
+    font-size: 2em;
+    box-shadow: 2px 2px rgba(224, 7, 152, 0.514);
+    transition: font-weight 0.3s, font-size 0.3s, background-color 0.3s;
+    -webkit-transition: font-weight 0.3s, font-size 0.3s, background-color 0.3s;
+    -moz-transition: font-weight 0.3s, font-size 0.3s, background-color 0.3s;
+    -o-transition: font-weight 0.3s, font-size 0.3s, background-color 0.3s;
+    -ms-transition: font-weight 0.3s, font-size 0.3s, background-color 0.3s;
+
+
+}
+.box:active, #startReset:active{
+    box-shadow: 0px 0px rgba(224, 7, 152, 0.514);
+    -moz-box-shadow: 0px 0px rgba(224, 7, 152, 0.514);
+    -webkit-box-shadow: 0px 0px rgba(224, 7, 152, 0.514);
+    top:2px;
+    left: 2px;
+}
+#startReset{
+    
+    background-color: rgba(255,255,255,0.5);
+    width:90px;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    box-shadow: 2px 2px rgba(255,255,255,0.3);
+    -moz-box-shadow: 2px 2px rgba(255,255,255,0.3);
+    -webkit-box-shadow: 2px 2px rgba(255,255,255,0.3);
+    position: relative;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+}
+
+#startReset:hover{
+    font-weight: bold;
+    transition: font-weight 0.5s;
+    -webkit-transition: font-weight 0.5s;
+    -ms-transition: font-weight 0.5s;
+    -o-transition: font-weight 0.5s;
+    -moz-transition: font-weight 0.5s;
+    
+}
+
+#timer{
+    width: 190px;
+    height: 30px;
+    position: absolute;
+    background-color: rgba(0,255,0,0.4);
+    bottom: 30px;
+    right: 10px;
+    border-radius: 10px;
+    padding: 10px 5px 5px 15px;
+    box-shadow: 0px 2px rgba(0,0,0,0.3);
+    display: none;
+
+}
+#gameover{
+    height: 250px;
+    width: 400px;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -moz-linear-gradient(to right, #e74c3c, #000000);
+    background: -o-linear-gradient(to right, #e74c3c, #000000);
+    font-size: 2.2em;
+    color: #fff88c;
+    text-align: center;
+    /* line-height: 30px; */
+    text-transform: uppercase;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    border: outset #333333;
+    z-index: 3px;
+    display: none;
+
+}
